@@ -1,11 +1,132 @@
 <resources>
 
-    <!-- Base application theme. -->
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyThemeNoBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RaisedButtonPrimary" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="RaisedButtonPrimaryLight" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="colorButtonNormal">@color/blanco_humo</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/blanco</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="RaisedButtonAccentLight" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="colorButtonNormal">@color/blanco</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/blanco</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="RaisedButtonAccent" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextNormalLight" parent="AppTheme">
+        <item name="android:textColorHint">@color/blanco</item>
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:textColorPrimary">@color/blanco</item>
+        <item name="colorAccent">@color/blanco</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlNormal">@color/blanco</item>
+    </style>
+
+    <style name="EditTextNormalDark" parent="AppTheme">
+        <item name="android:textColorHint">@color/primaryText</item>
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="colorAccent">@color/primaryText</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlNormal">@color/primaryText</item>
+    </style>
+
+    <style name="TextViewSmallLight" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewSmallDark" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextViewNormalLight" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewNormalDark" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextViewSubTitleLight" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewSubTitleDark" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_sub_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextViewTitleLight" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewTitleDark" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="ToolbarNormal" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/blanco</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
 </resources>
