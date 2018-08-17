@@ -76,9 +76,9 @@
                         android:theme="@style/TextViewSmallDark" />
 
                     <TextView
+                        android:id="@+id/tvNivel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Primaria"
                         android:theme="@style/TextViewSubTitleDark" />
                 </LinearLayout>
 
@@ -95,9 +95,9 @@
                         android:theme="@style/TextViewSmallDark" />
 
                     <TextView
+                        android:id="@+id/tvLugar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Domicilio"
                         android:theme="@style/TextViewSubTitleDark" />
                 </LinearLayout>
 
@@ -123,9 +123,9 @@
                         android:theme="@style/TextViewSmallDark" />
 
                     <TextView
+                        android:id="@+id/tvTutor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Bryam Soto"
                         android:theme="@style/TextViewSubTitleDark" />
 
                 </LinearLayout>
@@ -143,9 +143,9 @@
                         android:theme="@style/TextViewSmallDark" />
 
                     <TextView
+                        android:id="@+id/tvHorario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3 pm - 4 pm"
                         android:theme="@style/TextViewSubTitleDark" />
                 </LinearLayout>
 
@@ -165,9 +165,9 @@
                     android:theme="@style/TextViewSmallDark" />
 
                 <TextView
+                    android:id="@+id/tvCursos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Matematica, Letras"
                     android:theme="@style/TextViewSubTitleDark" />
             </LinearLayout>
 

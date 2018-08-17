@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".PerfilActivity">
+    android:orientation="vertical"
+    tools:context=".RegistroActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,23 +21,23 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:src="@drawable/layni_logo"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:theme="@style/TextViewTitleLight"
-                android:text="Mi Perfil"/>
+                android:src="@drawable/layni_logo"
+                android:text="Completa tus datos"
+                android:theme="@style/TextViewTitleLight" />
 
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
     <ImageView
-        android:layout_width="120dp"
-        android:src="@drawable/perfil"
-        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
-        android:layout_height="120dp" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -69,8 +69,8 @@
                         android:text="Nombres"
                         android:theme="@style/TextViewSmallDark" />
 
-                    <TextView
-                        android:id="@+id/tvNombres"
+                    <EditText
+                        android:id="@+id/edtNombres"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:theme="@style/TextViewSubTitleDark" />
@@ -88,8 +88,8 @@
                         android:text="Apellidos"
                         android:theme="@style/TextViewSmallDark" />
 
-                    <TextView
-                        android:id="@+id/tvApellidos"
+                    <EditText
+                        android:id="@+id/edtApellidos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:theme="@style/TextViewSubTitleDark" />
@@ -116,8 +116,8 @@
                         android:text="Telefono"
                         android:theme="@style/TextViewSmallDark" />
 
-                    <TextView
-                        android:id="@+id/tvTelefono"
+                    <EditText
+                        android:id="@+id/edtTelefono"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:theme="@style/TextViewSubTitleDark" />
@@ -136,8 +136,8 @@
                         android:text="Correo electronico"
                         android:theme="@style/TextViewSmallDark" />
 
-                    <TextView
-                        android:id="@+id/tvCorreo"
+                    <EditText
+                        android:id="@+id/edtCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:theme="@style/TextViewSubTitleDark" />
@@ -158,23 +158,24 @@
                     android:text="Direccion"
                     android:theme="@style/TextViewSmallDark" />
 
-                <TextView
-                    android:id="@+id/tvDireccion"
+                <EditText
+                    android:id="@+id/edtDireccion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:theme="@style/TextViewSubTitleDark" />
             </LinearLayout>
-
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
     <Button
+        android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
-        android:theme="@style/RaisedButtonPrimary"
-        android:text="Actualizar datos"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="wrap_content" />
+        android:text="Guardar datos"
+        android:theme="@style/RaisedButtonPrimary" />
+
 
 </LinearLayout>

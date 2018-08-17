@@ -3,19 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="Mi Perfil" />
 
-        <item
-            android:id="@+id/nav_reservas"
-            android:icon="@drawable/ic_reservas"
-            android:title="Mis reservas" />
-        <item
-            android:id="@+id/nav_perfil"
-            android:icon="@drawable/ic_perfil"
-            android:title="Mi Perfil" />
-    </group>
+            <item
+                android:id="@+id/nav_reservas"
+                android:icon="@drawable/ic_reservas"
+                android:title="Mis reservas" />
 
-    <item android:title="Communicate">
+            <item
+                android:id="@+id/nav_compras"
+                android:icon="@drawable/ic_compras"
+                android:title="Mis compras" />
+        </menu>
+    </item>
+
+    <item android:title="Otros">
         <menu>
             <item
                 android:id="@+id/nav_acerca"

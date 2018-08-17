@@ -12,11 +12,15 @@ class Fragment1 : Fragment(){
     var primaria = false
     var secundaria = false
 
+    lateinit var reserva: ReservaInterface
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater?.inflate(R.layout.fragment_1, container, false)
+        val view = inflater.inflate(R.layout.fragment_1, container, false)
 
         view.lyPrimaria.setOnClickListener {
             if (!primaria) {
+
+                reserva.selectNivel("Primaria")
 
                 primaria = true
                 secundaria = false
@@ -35,6 +39,8 @@ class Fragment1 : Fragment(){
         view.ly_secundaria.setOnClickListener {
             if (!secundaria) {
 
+                reserva.selectNivel("Secundaria")
+
                 primaria = false
                 secundaria = true
 
@@ -51,5 +57,12 @@ class Fragment1 : Fragment(){
 
         return view
     }
+
+
+    fun setReservaInterface(reservaInterface: ReservaInterface){
+        this.reserva = reservaInterface
+    }
+
+
 
 }

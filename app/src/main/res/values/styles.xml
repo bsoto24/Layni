@@ -31,7 +31,7 @@
         <item name="colorButtonNormal">@color/blanco_humo</item>
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="colorControlHighlight">@color/blanco</item>
-        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="RaisedButtonAccentLight" parent="AppTheme">
@@ -111,6 +111,20 @@
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewExtraLight" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_extra</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextViewExtraDark" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_extra</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/primaryText</item>
     </style>
 
     <style name="TextViewTitleDark" parent="Theme.AppCompat.Light">

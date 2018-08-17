@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -19,25 +20,17 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
-            <ImageView
-                android:layout_width="74dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:src="@drawable/layni_logo"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:scaleType="fitCenter" />
+                android:theme="@style/TextViewTitleLight"
+                android:text="Reserva tus clases"/>
 
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="Clases personalizadas para escolares"
-        android:theme="@style/EditTextNormalDark" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +38,6 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="horizontal">
-
 
         <TextView
             android:id="@+id/step1"
@@ -60,10 +52,10 @@
             android:id="@+id/step2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
             android:background="@drawable/circle_neutro"
             android:gravity="center"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
             android:text="2"
             android:theme="@style/TextViewSubTitleDark" />
 
@@ -71,9 +63,9 @@
             android:id="@+id/step3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
             android:background="@drawable/circle_neutro"
             android:gravity="center"
-            android:layout_marginEnd="32dp"
             android:text="3"
             android:theme="@style/TextViewSubTitleDark" />
 
@@ -92,15 +84,50 @@
         android:id="@+id/flContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/btnContinuar"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        android:text="Continuar"
-        android:theme="@style/RaisedButtonPrimary" />
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="32dp"
+                android:text="Volver"
+                android:theme="@style/RaisedButtonPrimaryLight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Continuar"
+                android:theme="@style/RaisedButtonPrimary" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>

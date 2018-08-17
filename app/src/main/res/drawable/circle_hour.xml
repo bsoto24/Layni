@@ -2,13 +2,13 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
 
-    <solid android:color="#f2bf67" />
+    <solid android:color="#daa343" />
 
     <stroke android:color="#C89131"
         android:width="2dp"/>
 
     <size
-        android:height="40dp"
-        android:width="40dp" />
+        android:height="80dp"
+        android:width="80dp" />
 
 </shape>

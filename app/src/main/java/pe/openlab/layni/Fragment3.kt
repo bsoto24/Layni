@@ -12,11 +12,15 @@ class Fragment3 : Fragment(){
     var local = false
     var domicilio = false
 
+    lateinit var reserva: ReservaInterface
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater?.inflate(R.layout.fragment_3, container, false)
+        val view = inflater.inflate(R.layout.fragment_3, container, false)
 
         view.ly_local.setOnClickListener {
             if (!local) {
+
+                reserva.selectLugar("Local")
 
                 local = true
                 domicilio = false
@@ -35,6 +39,8 @@ class Fragment3 : Fragment(){
         view.ly_domicilio.setOnClickListener {
             if (!domicilio) {
 
+                reserva.selectLugar("Domicilio")
+
                 local = false
                 domicilio = true
 
@@ -51,5 +57,11 @@ class Fragment3 : Fragment(){
 
         return view
     }
+
+
+    fun setReservaInterface(reservaInterface: ReservaInterface){
+        this.reserva = reservaInterface
+    }
+
 
 }

@@ -12,6 +12,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import kotlinx.android.synthetic.main.activity_login.*
+import pe.openlab.layni.entity.User
 
 class LoginActivity : AppCompatActivity(){
 
@@ -26,8 +27,14 @@ class LoginActivity : AppCompatActivity(){
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account = completedTask.getResult(ApiException::class.java)
-            Log.e("Account",account.email)
-            startActivity(Intent(this, MainActivity::class.java))
+            val user = User()
+            user.nombres = account.displayName!!
+            user.apellidos = account.familyName!!
+            user.correo = account.email!!
+            val intent = Intent(this, RegistroActivity::class.java)
+            intent.putExtra("user", user)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
             finish()
         } catch (e: ApiException) {
             Snackbar.make(findViewById(R.id.container), "Algo salió mal, intente más tarde", Snackbar.LENGTH_SHORT).show()

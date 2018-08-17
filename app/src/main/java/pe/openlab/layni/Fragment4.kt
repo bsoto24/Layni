@@ -14,11 +14,15 @@ class Fragment4 : Fragment(){
     var tutor2 = false
     var horas = 0
 
+    lateinit var reserva: ReservaInterface
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater?.inflate(R.layout.fragment_4, container, false)
 
         view.cv_tutor1.setOnClickListener {
             if (!tutor1) {
+
+                reserva.selectTutor("Bryam Soto", "https://scontent.flim1-1.fna.fbcdn.net/v/t31.0-8/22047696_1814911961867220_856383736325046580_o.jpg?_nc_cat=0&oh=d8ab558f9936c2e68e034b36bd5bee23&oe=5C04C71A", "3 pm - 4 pm")
 
                 tutor1 = true
                 tutor2 = false
@@ -36,6 +40,8 @@ class Fragment4 : Fragment(){
 
         view.cv_tutor2.setOnClickListener {
             if (!tutor2) {
+
+                reserva.selectTutor("Gerardo Sanchez", "https://scontent.flim1-1.fna.fbcdn.net/v/t1.0-9/38159482_2074797809199459_2745038427803090944_n.jpg?_nc_cat=0&oh=138236b4cdf90d92f4085045e16f31e0&oe=5C0AA695", "2 pm - 3 pm")
 
                 tutor1 = false
                 tutor2 = true
@@ -67,6 +73,12 @@ class Fragment4 : Fragment(){
         }
 
         return view
+    }
+
+
+
+    fun setReservaInterface(reservaInterface: ReservaInterface){
+        this.reserva = reservaInterface
     }
 
 }
