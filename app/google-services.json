@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1050422226048",
+    "firebase_url": "https://layni-213406.firebaseio.com",
+    "project_id": "layni-213406",
+    "storage_bucket": "layni-213406.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050422226048:android:ab9c51450c677fa2",
+        "android_client_info": {
+          "package_name": "pe.openlab.layni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050422226048-75758gc7ii313gojbopqlnbd4t4cvbfd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.openlab.layni",
+            "certificate_hash": "4c6b6d37494af05fec82f428e318d34155033171"
+          }
+        },
+        {
+          "client_id": "1050422226048-26se6pvhhjs0es4c5ptip7mn4e5sahmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfsooVTW_ZDq4PClJXnjz_AANWHQLRb4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050422226048-26se6pvhhjs0es4c5ptip7mn4e5sahmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

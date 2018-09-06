@@ -6,220 +6,127 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="Escoje tu horario"
-        android:theme="@style/TextViewTitleDark" />
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:gravity="center"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Escoje tu horario"
+            android:theme="@style/TextViewTitleDark" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:text="Cantidad de horas:"
             android:theme="@style/TextViewSubTitleDark" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btn_menos"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/circle_neutro"
-                android:text="-"
+            <TextView
+                android:id="@+id/tv_hora_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_active"
+                android:gravity="center"
+                android:text="1"
                 android:theme="@style/TextViewSubTitleDark" />
 
             <TextView
-                android:id="@+id/tv_horas"
+                android:id="@+id/tv_hora_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:text="0"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_neutro"
+                android:gravity="center"
+                android:text="1  1/2"
                 android:theme="@style/TextViewSubTitleDark" />
 
-            <Button
-                android:id="@+id/btn_mas"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+            <TextView
+                android:id="@+id/tv_hora_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/circle_neutro"
-                android:text="+"
+                android:gravity="center"
+                android:text="2"
                 android:theme="@style/TextViewSubTitleDark" />
+
+            <TextView
+                android:id="@+id/tv_hora_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_neutro"
+                android:gravity="center"
+                android:text="2  1/2"
+                android:theme="@style/TextViewSubTitleDark" />
+
         </LinearLayout>
 
-    </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_marginStart="16dp"
-        android:theme="@style/TextViewTitleDark"
-        android:text="Selecciona a tu tutor"
-        android:layout_marginTop="24dp"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Mi paquete"
+            android:theme="@style/TextViewSubTitleDark" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
 
         <android.support.v7.widget.CardView
-            android:id="@+id/cv_tutor1"
             android:layout_width="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            app:cardElevation="3dp"
-            app:cardCornerRadius="7dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_height="100dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#f5e8d3"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="2"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/tutor1"
-                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_hour"
+                    android:gravity="center"
+                    android:text="10"
+                    android:theme="@style/TextViewExtraLight" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingStart="8dp"
-                    android:gravity="center_vertical"
-                    android:layout_weight="4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="horas disponibles"
+                    android:theme="@style/TextViewSubTitleDark" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:theme="@style/TextViewSubTitleDark"
-                        android:text="Bryam Soto"
-                        android:layout_height="wrap_content" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="Horario disponible"
-                        android:theme="@style/TextViewSmallDark"
-                        android:layout_marginTop="8dp"
-                        android:layout_height="wrap_content" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:text="2 pm - 3 pm"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:theme="@style/TextViewNormalLight"
-                            android:layout_height="wrap_content" />
-
-                    </android.support.v7.widget.CardView>
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/img_tutor1_selected"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:visibility="gone"
-                    android:src="@drawable/check"
-                    android:layout_height="match_parent" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/cv_tutor2"
-            android:layout_width="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
-            app:cardElevation="3dp"
-            app:cardCornerRadius="7dp"
-            android:layout_marginEnd="16dp"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_weight="2"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/tutor2"
-                    android:layout_height="match_parent" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingStart="8dp"
-                    android:gravity="center_vertical"
-                    android:layout_weight="4">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:theme="@style/TextViewSubTitleDark"
-                        android:text="Gerardo Sanchez"
-                        android:layout_height="wrap_content" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:text="Horario disponible"
-                        android:theme="@style/TextViewSmallDark"
-                        android:layout_marginTop="8dp"
-                        android:layout_height="wrap_content" />
-
-                    <android.support.v7.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:text="4 pm - 5 pm"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:theme="@style/TextViewNormalLight"
-                            android:layout_height="wrap_content" />
-
-                    </android.support.v7.widget.CardView>
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/img_tutor2_selected"
-                    android:layout_width="0dp"
-                    android:visibility="gone"
-                    android:layout_weight="1"
-                    android:padding="8dp"
-                    android:src="@drawable/check"
-                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btnReservar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="16dp"
+                    android:text="Comprar horas"
+                    android:theme="@style/RaisedButtonPrimaryBig" />
 
             </LinearLayout>
 

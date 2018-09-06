@@ -3,7 +3,7 @@ package pe.openlab.layni.entity
 import java.io.Serializable
 
 data class User(
-        var id: Int = -1,
+        var id: String = "",
         var nombres: String = "",
         var apellidos: String = "",
         var telefono: String = "",

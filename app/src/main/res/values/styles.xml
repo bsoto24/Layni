@@ -26,8 +26,24 @@
         <item name="android:textColor">@color/blanco</item>
     </style>
 
+    <style name="RaisedButtonPrimaryBig" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
     <style name="RaisedButtonPrimaryLight" parent="AppTheme">
         <item name="android:textSize">@dimen/text_normal</item>
+        <item name="colorButtonNormal">@color/blanco_humo</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="colorControlHighlight">@color/blanco</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="RaisedButtonPrimaryLightBig" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_title</item>
         <item name="colorButtonNormal">@color/blanco_humo</item>
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="colorControlHighlight">@color/blanco</item>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#f2bf67"
+        android:backgroundTint="#f5e8d3"
         app:cardCornerRadius="7dp"
         app:cardElevation="3dp">
 
@@ -68,16 +68,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="horas disponibles"
-                android:theme="@style/TextViewSubTitleLight" />
+                android:theme="@style/TextViewSubTitleDark" />
 
             <Button
                 android:id="@+id/btnReservar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="16dp"
                 android:text="Reservar clases"
-                android:theme="@style/RaisedButtonPrimaryLight" />
+                android:theme="@style/RaisedButtonPrimaryBig" />
 
         </LinearLayout>
 
@@ -90,7 +90,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Compra un plan"
-        android:theme="@style/TextViewTitleDark" />
+        android:theme="@style/TextViewSubTitleDark" />
 
     <TextView
         android:layout_width="match_parent"
